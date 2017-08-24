@@ -1,0 +1,147 @@
+[
+	{
+		"Type": "blog",
+		"Active": "POST",
+		"SiteName": "乐乎博客发文字",
+		"Uri":	"new/text/",
+		"Host": "www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "P_INFO=",
+				"End": "|",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "title=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&", 
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "blog",
+		"Active": "POST",
+		"SiteName": "乐乎博客发长文",
+		"Uri":	"new/long/",
+		"Host": "www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "P_INFO=",
+				"End": "|",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "title=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "longPostContent=",
+				"End": "&", 
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "blog",
+		"Active": "POST",
+		"SiteName": "乐乎博客评论",
+		"Uri":	"/dwr/call/plaincall/PostBean.addPostResponse.dwr",
+		"Host": "www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "P_INFO=",
+				"End": "|",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "c0-e3=string:",
+				"End": "\n", 
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "blog",
+		"Active": "POST",
+		"SiteName": "乐乎博客转载",
+		"Uri":	"/reblog/",
+		"Host": "www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "P_INFO=",
+				"End": "|",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "title=",
+				"End": "&", 
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&", 
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "blog",
+		"Active": "POST",
+		"SiteName": "乐乎博客登录",
+		"Uri":	"/dl/l",
+		"Host": "passport.www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "username",
+				"Key": "\"un\":\"",
+				"End": "\"", 
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "blog",
+		"Active": "GET",
+		"SiteName": "乐乎博客退出",
+		"Uri":	"/logout",
+		"Host": "www.lofter.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "P_INFO=",
+				"End": "|",
+				"Code": "url"
+			}
+		]
+	}
+]

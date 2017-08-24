@@ -1,0 +1,28 @@
+[
+	{
+		"Type": "netstore",
+		"Active": "POST",
+		"SiteName": "百度网盘上传",
+		"Uri": "/rest/2.0/pcs/superfile2?method=upload",
+		"Host": ".pcs.baidu.com",
+		"AttHost": ".pcs.baidu.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "filename",
+				"Key": "path",
+				"End": "&", 
+				"Code": "url+utf8"
+			},
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "opid",
+				"Key": "uploadid",
+				"End": "",
+				"Code": "",
+				"Output": "n"
+			}
+		]
+
+	}
+]

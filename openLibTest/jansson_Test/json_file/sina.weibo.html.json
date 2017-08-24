@@ -1,0 +1,117 @@
+[
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "新浪微博发文",
+		"Uri":	"/aj/mblog/add",
+		"Host": "weibo.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "un",
+				"End": ";",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "text=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "新浪微博发文",
+		"Uri":	"/p/aj/proxy",
+		"Host": "weibo.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "un",
+				"End": ";",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "&text=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "新浪微博评论",
+		"Uri":	"/aj/v6/comment/add",
+		"Host": "weibo.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "un",
+				"End": ";",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "新浪微博转发",
+		"Uri":	"/aj/v6/mblog/forward",
+		"Host": "weibo.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "un",
+				"End": ";",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "reason=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "新浪微博头条文章",
+		"Uri":	"/ttarticle/p/aj/draft",
+		"Host": "weibo.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "un",
+				"End": ";",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	}
+]

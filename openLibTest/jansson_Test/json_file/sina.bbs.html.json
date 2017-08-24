@@ -1,0 +1,119 @@
+[
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛发帖",
+		"Uri":	"/post.php?action=newthread",
+		"Host": ".sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "subject\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛回帖",
+		"Uri":	"/post.php?action=reply",
+		"Host": ".sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "subject\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛登录",
+		"Uri":	"/sso/login.php",
+		"Host": "login.sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "username",
+				"Key": "&su=",
+				"End": "&",
+				"Code": "url+utf8"
+			},
+			{
+				"Field": "req_body",
+				"Name": "password",
+				"Key": "&sp=",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+	},
+		{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛退出",
+		"Uri":	"/forum/logout.php",
+		"Host": "sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "SINA_NU=2:",
+				"End": ":;",
+				"Code": "url"
+			}
+		]
+	},
+		{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛退出",
+		"Uri":	"/sso/logout.php",
+		"Host": "login.sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "cREMloginname=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新浪论坛退出",
+		"Uri":	"/logging.php?action=logout",
+		"Host": "sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "name%3D",
+				"End": "%26",
+				"Code": "url"
+			}
+		]
+	}
+]

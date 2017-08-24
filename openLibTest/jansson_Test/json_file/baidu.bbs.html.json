@@ -1,0 +1,49 @@
+[
+    {
+	"Type": "bbs",
+	"Active": "POST",
+	"SiteName": "百度贴吧回帖",
+	"Uri":	"/f/commit/post/add",
+	"Host": "tieba.baidu.com",
+	"Fields": [
+	    {
+		"Field": "req_body",
+		"Name": "subject",
+		"Key": "&kw=",
+		"End": "&", 
+		"Code": "url"
+	    },	
+	    {
+		"Field": "req_body",
+		"Name": "content",
+		"Key": "&content=",
+		"End": "&", 
+		"Code": "url"
+	    }	
+	]
+    },
+    {
+	"Type": "bbs",
+	"Active": "POST",
+	"SiteName": "百度贴吧发帖",
+	"Uri":	"/f/commit/thread/add",
+	"Host": "tieba.baidu.com",
+	"Fields": [
+	    {
+		"Field": "req_body",
+		"Name": "subject",
+		"Key": "&title=",
+		"End": "&", 
+		"Code": "url"
+	    },	
+	    {
+		"Field": "req_body",
+		"Name": "content",
+		"Key": "&content=",
+		"End": "&", 
+		"Code": "url"
+	    }	
+	]
+    }
+	
+]

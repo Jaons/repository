@@ -1,0 +1,19 @@
+[
+	{
+		"Type": "shopping",
+		"Active": "GET+POST",
+		"SiteName": "京东",
+		"Uri":	"/Search?",
+		"Host": "search.jd.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "title",
+				"Key": "keyword",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	}
+]

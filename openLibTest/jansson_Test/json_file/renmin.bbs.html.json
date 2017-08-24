@@ -1,0 +1,117 @@
+[
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "人民论坛发帖",
+		"Uri":	"/postAction.do",
+		"Host": ".people.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "wdcid=",
+				"End": "&",
+				"Code": "url+utf8"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "titleText=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message=",
+				"End": "&", 
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "人民论坛回帖",
+		"Uri":	"/postAction.do?callback=",
+		"Host": ".people.com.cn",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "titleText=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message=",
+				"End": "", 
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "人民论坛登录",
+		"Uri":	"/_login.do",
+		"Host": "passport.people.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "userName=",
+				"End": "&",
+				"Code": "url+utf8"
+			},	
+			{
+				"Field": "req_hdr",
+				"Name": "password",
+				"Key": "password=",
+				"End": "&", 
+				"Code": "url+utf8"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "人民论坛退出",
+		"Uri":	"logout.do",
+		"Host": ".people.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "guzz_session_id=",
+				"End": ";",
+				"Code": "url+utf8"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "人民论坛回帖",
+		"Uri":	"/?app=comment&controller=review&action=add",
+		"Host": "app.rmlt.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "username=",
+				"End": ";",
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&", 
+				"Code": "url"
+			}	
+		]
+	}
+]

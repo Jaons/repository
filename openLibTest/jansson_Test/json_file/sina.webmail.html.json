@@ -1,0 +1,116 @@
+[
+	{
+		"Type": "webmail",
+		"Active": "POST",
+		"SiteName": "新浪网络邮箱",
+		"Uri": "/classic/send.php?",
+		"Host": ".mail.sina.com.cn",
+		"AttHost": ".mail.sina.com.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "opid",
+				"Key": "SWEBAPPSESSID",
+				"End": "",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "attlist",
+				"Key": "name=\"att_swf\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "name=\"from\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "name=\"to\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "name=\"cc\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "name=\"bcc\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "name=\"subj\"\r\n\r\n",
+				"End": "\r\n",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "name=\"msgtxt\"\r\n\r\n",
+				"End": "\r\n----",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "attachment",
+		"Active": "POST",
+		"SiteName": "sinawebmail附件",
+		"Uri": "/classic/uploadatt.php?",
+		"Host": ".mail.sina.com.cn",
+		"Request": "single",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "fileid",
+				"Key": "\"id\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "filename",
+				"Key": "\"name\":\"",
+				"End": "\"",
+				"Code": "ucs"
+			},
+			{
+				"Field": "res_body",
+				"Name": "filesize",
+				"Key": "\"size\":",
+				"End": "}",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "length",
+				"Key": "\"size\":",
+				"End": "}",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "opid",
+				"Key": "SWEBAPPSESSID",
+				"End": "",
+				"Code": ""
+			}
+		]
+	}
+]

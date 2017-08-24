@@ -1,0 +1,19 @@
+[
+
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "腾讯视频搜索",
+		"Uri":	"/x/search/?",
+		"Host": "v.qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "video_name",
+				"Key": "q",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	}
+]

@@ -1,0 +1,116 @@
+[
+	{
+		"Type": "webmail",
+		"Active": "PUT",
+		"SiteName": "搜狐网络邮箱",
+		"Uri": "/fe/mail",
+		"Host": "mail.sohu.com",
+		"AttHost": "mail.sohu.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "opid",
+				"Key": "login_uid",
+				"End": "",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "attlist",
+				"Key": "\"attachments\":",
+				"End": ",\"send\":",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "\"from\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "\"to\":[",
+				"End": "]",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "\"cc\":[",
+				"End": "]",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "\"bcc\":[",
+				"End": "]",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "\"subject\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"content\":\"",
+				"End": "\"",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "attachment",
+		"Active": "POST",
+		"SiteName": "sohuwebmail附件",
+		"Uri": "/fe/attach",
+		"Host": "mail.sohu.com",
+		"Request": "single",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "fileid",
+				"Key": "\"id\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "filename",
+				"Key": "\"name\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "filesize",
+				"Key": "\"size\":",
+				"End": "}",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "length",
+				"Key": "\"size\":",
+				"End": "}",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "opid",
+				"Key": "login_uid",
+				"End": "",
+				"Code": ""
+			}
+		]
+	}
+]

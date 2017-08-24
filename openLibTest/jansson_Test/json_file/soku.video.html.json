@@ -1,0 +1,18 @@
+[
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "SOKU搜库",
+		"Uri":	"/search_video/q_",
+		"Host": "www.soku.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri",
+				"Name": "video_name",
+				"Key": "/q_",
+				"End": "?",
+				"Code": "url"
+			}
+		]
+	}
+]

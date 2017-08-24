@@ -1,0 +1,188 @@
+[
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360新闻搜索",
+		"Uri":	"/ns?",
+		"Host": "news.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "urldecode+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360问答搜索",
+		"Uri":	"/search/?",
+		"Host": "wenda.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "urldecode+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360视频搜索",
+		"Uri":	"/v?",
+		"Host": "video.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360图片搜索",
+		"Uri":	"/i?",
+		"Host": "image.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360音乐搜索",
+		"Uri":	"/s?",
+		"Host": "s.music.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": " ",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360地图搜索",
+		"Uri":	"/?",
+		"Host": "ditu.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "k",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360地图搜索",
+		"Uri":	"/newapi?",
+		"Host": "restapi.map.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "keyword",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360百科搜索",
+		"Uri":	"/search/?",
+		"Host": "baike.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": " ",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360良医搜索",
+		"Uri":	"/s?",
+		"Host": "ly.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360良医搜索",
+		"Uri":	"/s?",
+		"Host": "s.liangyi.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "360软件搜索",
+		"Uri":	"/search?",
+		"Host": "soft.so.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": " ",
+				"Code": "url+utf8"
+			}
+		]
+
+	}
+]

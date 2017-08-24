@@ -1,0 +1,141 @@
+[
+	{
+		"Type": "webmail",
+		"Active": "POST",
+		"SiteName": "QQ网络邮箱",
+		"Uri": "/cgi-bin/compose_send?",
+		"Host": "mail.qq.com",
+		"AttHost": ".mail.qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "opid",
+				"Key": "sid",
+				"End": "",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "attlist",
+				"Key": "&upfilelist=",
+				"End": "&",
+				"Code": "url",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "&sendmailname=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "&to=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "&cc=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "&bcc=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "&subject=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "&content__html=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "attachment",
+		"Active": "POST",
+		"SiteName": "qqwebmail附件",
+		"Uri": "/cgi-bin/uploadunite?func=CreateFile",
+		"Host": ".mail.qq.com",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "fileid",
+				"Key": "\"sFileId\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "filename",
+				"Key": "\"path\":\"",
+				"End": "\"",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "filesize",
+				"Key": "\"size\":",
+				"End": ",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "length",
+				"Key": "\"size\":",
+				"End": ",",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "opid",
+				"Key": "sid",
+				"End": "",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "dataid",
+				"Key": "\"sha\":\"",
+				"End": "\"",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "filedata",
+		"Active": "POST",
+		"SiteName": "qqwebmail附件数据",
+		"Uri": "/ftn_handler/",
+		"Host": ".mail.ftn.qq.com",
+		"AttHost": ".mail.qq.com",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "req_hdr_param",
+				"Name": "DATA-MD5",
+				"Key": "DATA-MD5",
+				"End": "",
+				"Code": ""
+			}
+		]
+	}
+]

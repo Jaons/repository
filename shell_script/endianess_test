@@ -1,0 +1,39 @@
+# Copyright (C) Igor Sysoev
+# Copyright (C) Nginx, Inc.
+
+
+cat << END > autotest.c
+
+int main() {
+    int i = 0x11223344;
+    char *p;
+
+    p = (char *) &i;
+    if (*p == 0x44) return 0;           // bigendian
+    return 1;                           // littleendian
+}
+
+END
+
+test="gcc -g\
+          -o autotest autotest.c"
+
+eval "$test >> test.conf 2>&1"
+
+if [ -x autotest ]; then
+    #if autotest >/dev/null 2>&1; then
+    if ./autotest > autotest_res 2>&1; then
+        echo $?
+        echo " little endian"
+    else
+        echo $?
+        echo " big endian"
+    fi
+
+
+else
+
+    echo
+    echo "$0: error: cannot detect system byte ordering"
+    exit 1
+fi

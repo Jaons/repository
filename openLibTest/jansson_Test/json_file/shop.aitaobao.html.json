@@ -1,0 +1,34 @@
+[
+	{
+		"Type": "shopping",
+		"Active": "GET",
+		"SiteName": "爱淘宝搜索",
+		"Uri":	"/search/index.htm?",
+		"Host": "ai.taobao.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "title",
+				"Key": "key",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "shopping",
+		"Active": "GET",
+		"SiteName": "爱淘宝搜索",
+		"Uri":	"/search.html",
+		"Host": ".taobao.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "title",
+				"Key": "q",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	}
+]

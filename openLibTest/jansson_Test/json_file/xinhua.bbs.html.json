@@ -1,0 +1,116 @@
+[	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新华网论坛回帖",
+		"Uri":	"/newPost.do",
+		"Host": "forum.home.news.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "wdcid=",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"content\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新华网论坛发帖",
+		"Uri":	"/newPost.do?",
+		"Host": "forum.home.news.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "wdcid=",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "\"title\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"content\"\r\n\r\n",
+				"End": "\r\n----", 
+				"Code": "url+gbk"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新华网论坛登录",
+		"Uri":	"/login.jsp",
+		"Host": "forum.home.news.cn",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "username",
+				"Key": "senderName=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "password",
+				"Key": "password=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "新华网社区登录",
+		"Uri":	"/login.jsp",
+		"Host": "forum.xinhuanet.com",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "username",
+				"Key": "userid=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "password",
+				"Key": "password=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "GET",
+		"SiteName": "新华网论坛退出",
+		"Uri":	"/logout.jsp",
+		"Host": "forum.home.news.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "username=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	}
+]

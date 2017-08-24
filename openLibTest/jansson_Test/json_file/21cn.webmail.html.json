@@ -1,0 +1,116 @@
+[
+	{
+		"Type": "webmail",
+		"Active": "POST",
+		"SiteName": "21CN网络邮箱",
+		"Uri": "/w2/mail/sendMail.do",
+		"Host": "mail.21cn.com",
+		"AttHost": "mail.21cn.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "opid",
+				"Key": "21CNSESSION_ID",
+				"End": "",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "attlist",
+				"Key": "&attachmentList=",
+				"End": "&",
+				"Code": "url",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "&from=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "&to=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "&cc=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "&bcc=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "&subject=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "attachment",
+		"Active": "POST",
+		"SiteName": "21CN网络邮箱附件",
+		"Uri": "/w2/mail/upload.do?",
+		"Host": "mail.21cn.com",
+		"Request": "single",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "fileid",
+				"Key": "\"fileKey\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "filename",
+				"Key": "\"fileName\":\"",
+				"End": "\"",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "filesize",
+				"Key": "\"size\":",
+				"End": ",",
+				"Code": ""
+			},
+			{
+				"Field": "res_body",
+				"Name": "length",
+				"Key": "\"size\":",
+				"End": ",",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "opid",
+				"Key": "sid",
+				"End": "",
+				"Code": ""
+			}
+		]
+	}
+]

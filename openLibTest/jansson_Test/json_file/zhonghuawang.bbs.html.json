@@ -1,0 +1,188 @@
+[
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网论坛发帖",
+		"Uri":	"/jsp/pub/pubnewthread.do",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "urldecode+utf8"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "\"title\"\r\n\r\n",
+				"End": "\r\n-", 
+				"Code": "urldecode+utf8"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"body\"\r\n\r\n<p>",
+				"End": "</p>\r\n-", 
+				"Code": "urldecode+utf8"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网论坛回帖",
+		"Uri":	"/jsp/pub/controler.do?event=PUBOLDCOMMONFORUMS&",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"body\"\r\n\r\n<p>",
+				"End": "</p>\r\n-", 
+				"Code": "url+utf8"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网论坛快速回帖",
+		"Uri":	"/controler.do?event=PUBOLDCOMMONFORUMSQUICK&",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"body\"\r\n\r\n",
+				"End": "\r\n-", 
+				"Code": "url+utf8"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网论坛登录",
+		"Uri":	"event=LOGIN",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "username=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_hdr",
+				"Name": "password",
+				"Key": "password=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网论坛登录",
+		"Uri":	"/jsp/pub/welcome.jsp",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "中华网PASSPORT登录",
+		"Uri":	"/user/passportLogon.do",
+		"Host": ".passport1.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "username=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_hdr",
+				"Name": "password",
+				"Key": "password=",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "中华网论坛退出",
+		"Uri":	"/jsp/pub/xx.do?event=LOGOUT",
+		"Host": ".club.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	},
+		{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "中华网论坛退出",
+		"Uri":	"processID=logout",
+		"Host": ".passport.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	},
+		{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "中华网论坛退出",
+		"Uri":	"/user/passportLogoff.do",
+		"Host": ".passport1.china.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "nickname=",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	}
+]

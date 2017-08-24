@@ -1,0 +1,18 @@
+[
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "优酷视频观看",
+		"Uri":	"/v_show/id_",
+		"Host": "v.youku.com",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "video_name",
+				"Key": "<title>",
+				"End": "</title>",
+				"Code": ""
+			}
+		]
+	}
+]

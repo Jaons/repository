@@ -1,0 +1,55 @@
+[
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "QQ微博发文/评论/转播",
+		"Uri":	"/old/publish.php",
+		"Host": "api.t.qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "content=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "weibo",
+		"Active": "POST",
+		"SiteName": "QQ微博长文",
+		"Uri":	"/longweibo/index.php",
+		"Host": "api.t.qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "longTitle=",
+				"End": "&",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "longContent=",
+				"End": "&",
+				"Code": "url"
+			}	
+		]
+	}
+]

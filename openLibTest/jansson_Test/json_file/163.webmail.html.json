@@ -1,0 +1,168 @@
+[
+	{
+		"Type": "webmail",
+		"Active": "POST",
+		"SiteName": "163网络邮箱简约版",
+		"Uri": "/jy6/xhr/compose/compose.do?action=DELIVER",
+		"Host": ".mail.163.com",
+		"AttHost": ".mail.163.com",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "opid",
+				"Key": "\"composeId\":\"",
+				"End": "\",",
+				"Code": "",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "\"account\":\"",
+				"End": "\",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "\"to\":\"",
+				"End": "\",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "\"cc\":\"",
+				"End": "\",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "\"bcc\":\"",
+				"End": "\",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "\"subject\":\"",
+				"End": "\",",
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "\"content\":\"",
+				"End": "\",",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "webmail",
+		"Active": "POST",
+		"SiteName": "163网络邮箱标准版",
+		"Uri": "func=mbox:compose",
+		"Host": ".mail.163.com",
+        "AttHost": ".mail.163.com",
+		"Fields": [
+			{
+				"Field": "req_body",
+				"Name": "opid",
+				"Key": "name%3D%22id%22%3E",
+				"End": "%3C%2Fstring%3E",
+				"Code": "url",
+				"Output": "n"
+			},
+			{
+				"Field": "req_body",
+				"Name": "from",
+				"Key": "name%3D%22account%22%3E",
+				"End": "%3C%2Fstring%3E",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "to",
+				"Key": "name%3D%22to%22%3E",
+				"End": "%3C%2Farray%3E",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "chao",
+				"Key": "name%3D%22cc%22%3E",
+				"End": "%3C%2Farray%3E",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "mi",
+				"Key": "name%3D%22bcc%22%3E",
+				"End": "%3C%2Farray%3E",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "name%3D%22subject%22%3E",
+				"End": "%3C%2Fstring%3E",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "name%3D%22content%22%3E",
+				"End": "%3C%2Fstring%3E",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "attachment",
+		"Active": "POST",
+		"SiteName": "163webmail附件",
+		"Uri": "/upxmail/upload?sid=",
+		"Host": ".mail.163.com",
+		"Request": "multiple",
+		"Output": "n",
+		"Fields": [
+			{
+				"Field": "req_hdr_param",
+				"Name": "filename",
+				"Key": "Mail-Upload-name",
+				"End": "",
+				"Code": "url"
+			},
+			{
+				"Field": "req_hdr_param",
+				"Name": "filesize",
+				"Key": "Mail-Upload-size",
+				"End": "",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_param",
+				"Name": "offset",
+				"Key": "Mail-Upload-offset",
+				"End": "",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_param",
+				"Name": "length",
+				"Key": "Mail-Upload-length",
+				"End": "",
+				"Code": ""
+			},
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "opid",
+				"Key": "cid",
+				"End": "",
+				"Code": ""
+			}
+		]
+    }
+]

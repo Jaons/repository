@@ -1,0 +1,154 @@
+[
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应网页搜索",
+		"Uri":	"/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+		{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应图片搜索",
+		"Uri":	"/images/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},	
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应视频搜索",
+		"Uri":	"/videos/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+		{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应学术搜索",
+		"Uri":	"/academic/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应词典搜索",
+		"Uri":	"/dict/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应网典搜索",
+		"Uri":	"/knows/search?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应地图搜索",
+		"Uri":	"/ditu/?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+    {
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应地图搜索",
+		"Uri":	"/ditu/default.aspx?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "必应更多搜索",
+		"Uri":	"/explore?",
+		"Host": "cn.bing.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "q",
+				"End": "&",
+				"Code": "url+utf8"
+			}
+		]
+	}
+]

@@ -1,0 +1,84 @@
+[
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "土豆视频搜索",
+		"Uri":	"/t/nisearch.do?",
+		"Host": "www.soku.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "video_name",
+				"Key": "kw",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "土豆视频搜索",
+		"Uri":	"/t/nisearch/",
+		"Host": "www.soku.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri",
+				"Name": "video_name",
+				"Key": "nisearch/",
+				"End": "?",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "土豆视频观看",
+		"Uri":	"/programs/view/",
+		"Host": "www.tudou.com",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "video_name",
+				"Key": "<title>",
+				"End": "</title>",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "土豆视频观看",
+		"Uri":	"/albumplay/",
+		"Host": "www.tudou.com",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "video_name",
+				"Key": "<title>",
+				"End": "</title>",
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "video",
+		"Active": "GET",
+		"SiteName": "土豆视频观看",
+		"Uri":	"/listplay/",
+		"Host": "www.tudou.com",
+		"Fields": [
+			{
+				"Field": "res_body",
+				"Name": "video_name",
+				"Key": "<title>",
+				"End": "</title>",
+				"Code": ""
+			}
+		]
+	}
+]

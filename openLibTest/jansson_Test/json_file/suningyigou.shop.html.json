@@ -1,0 +1,35 @@
+[
+
+	{
+		"Type": "shopping",
+		"Active": "GET",
+		"SiteName": "苏宁易购",
+		"Uri":	"/",
+		"Host": "search.suning.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri",
+				"Name": "title",
+				"Key": "/",
+				"End": "/",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "shopping",
+		"Active": "GET",
+		"SiteName": "苏宁易购",
+		"Uri":	"/emall/mobile",
+		"Host": "search.suning.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "title",
+				"Key": "keyword",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	}
+]

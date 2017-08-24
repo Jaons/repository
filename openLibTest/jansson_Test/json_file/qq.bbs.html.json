@@ -1,0 +1,142 @@
+[
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "QQ论坛登录",
+		"Uri":	"/ptlogin",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "pt2gguin=o0",
+				"End": ";", 
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "QQ论坛登录",
+		"Uri":	"/login?",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "username",
+				"Key": "u",
+				"End": "&", 
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "QQ论坛快速登录",
+		"Uri":	"/cgi-bin/login?",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";", 
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST+GET",
+		"SiteName": "QQ论坛PASSPORT登录",
+		"Uri":	"/bbs/bbs.htm",
+		"Host": "bbs.qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr",
+				"Name": "username",
+				"Key": "ptui_loginuin=",
+				"End": ";", 
+				"Code": ""
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "QQ论坛回帖",
+		"Uri":	"action=reply",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";", 
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message=",
+				"End": "&", 
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "subject=",
+				"End": "&", 
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "QQ论坛发帖",
+		"Uri":	"/forum.php?mod=post&action=newthread",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";", 
+				"Code": ""
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "subject=",
+				"End": "&", 
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "message=",
+				"End": "&", 
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "GET",
+		"SiteName": "QQ论坛退出",
+		"Uri":	"/logout?",
+		"Host": ".qq.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "o_cookie",
+				"End": ";", 
+				"Code": ""
+			}	
+		]
+	}
+]

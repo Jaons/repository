@@ -1,0 +1,204 @@
+[
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗新闻搜索",
+		"Uri":	"/news?",
+		"Host": "news.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url+gbk"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗新闻搜索",
+		"Uri":	"/news?ie=utf8",
+		"Host": "news.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗微信搜索",
+		"Uri":	"/weixin?",
+		"Host": "weixin.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗知乎搜索",
+		"Uri":	"/zhihu?",
+		"Host": "zhihu.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗图片搜索",
+		"Uri":	"/pics?",
+		"Host": "pic.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url+gbk"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗图片搜索",
+		"Uri":	"/pics?ie=utf8",
+		"Host": "pic.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗视频搜索",
+		"Uri":	"/v?",
+		"Host": "v.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url+gbk"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗视频搜索",
+		"Uri":	"/v?ie=utf8",
+		"Host": "v.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗明医搜索",
+		"Uri":	"/mingyi?",
+		"Host": "mingyi.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗明医搜索",
+		"Uri":	"/mingyi?keyword",
+		"Host": "mingyi.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "keyword",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗英文搜索",
+		"Uri":	"/english?",
+		"Host": "english.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	},
+	{
+		"Type": "search",
+		"Active": "GET",
+		"SiteName": "搜狗学术搜索",
+		"Uri":	"/xueshu?",
+		"Host": "scholar.sogou.com",
+		"Fields": [
+			{
+				"Field": "req_hdr_uri_param",
+				"Name": "kw",
+				"Key": "query",
+				"End": "&",
+				"Code": "url"
+			}
+		]
+
+	}
+]

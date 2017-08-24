@@ -1,0 +1,108 @@
+[
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "天涯论坛发帖",
+		"Uri":	"/api?method=bbs.ice.compose",
+		"Host": "bbs.tianya.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "qhb_useName",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "params.title=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "params.content=",
+				"End": "&", 
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "天涯论坛发帖",
+		"Uri":	"/api/tw?method=tweet.ice.insert",
+		"Host": "bbs.tianya.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "qhb_useName",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "params.title=",
+				"End": "&", 
+				"Code": "url"
+			},	
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "params.content=",
+				"End": "&", 
+				"Code": "url"
+			}	
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "POST",
+		"SiteName": "天涯论坛回帖",
+		"Uri":	"/api?method=bbs.ice.reply",
+		"Host": "bbs.tianya.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "qhb_useName",
+				"End": ";",
+				"Code": "url"
+			},
+			{
+				"Field": "req_body",
+				"Name": "content",
+				"Key": "params.content=",
+				"End": "&", 
+				"Code": "url+utf8"
+			},
+			{
+				"Field": "req_body",
+				"Name": "subject",
+				"Key": "params.title=",
+				"End": "&", 
+				"Code": "url"
+			}			
+		]
+	},
+	{
+		"Type": "bbs",
+		"Active": "GET",
+		"SiteName": "天涯论坛退出",
+		"Uri":	"/logout",
+		"Host": "passport.tianya.cn",
+		"Fields": [
+			{
+				"Field": "req_hdr_cookies",
+				"Name": "username",
+				"Key": "qhb_useName",
+				"End": ";",
+				"Code": "url"
+			}
+		]
+	}
+]
